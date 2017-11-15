@@ -1,1 +1,163 @@
-var ToastrDemo={init:function(){!function(){var t,o=-1,e=0;$("#showtoast").click(function(){var n=$("#toastTypeGroup input:radio:checked").val(),a=$("#message").val(),i=$("#title").val()||"",s=$("#showDuration"),r=$("#hideDuration"),l=$("#timeOut"),c=$("#extendedTimeOut"),p=$("#showEasing"),u=$("#hideEasing"),d=$("#showMethod"),h=$("#hideMethod"),v=e++,g=$("#addClear").prop("checked");toastr.options={closeButton:$("#closeButton").prop("checked"),debug:$("#debugInfo").prop("checked"),newestOnTop:$("#newestOnTop").prop("checked"),progressBar:$("#progressBar").prop("checked"),positionClass:$("#positionGroup input:radio:checked").val()||"toast-top-right",preventDuplicates:$("#preventDuplicates").prop("checked"),onclick:null},$("#addBehaviorOnToastClick").prop("checked")&&(toastr.options.onclick=function(){alert("You can perform some custom action after a toast goes away")}),s.val().length&&(toastr.options.showDuration=s.val()),r.val().length&&(toastr.options.hideDuration=r.val()),l.val().length&&(toastr.options.timeOut=g?0:l.val()),c.val().length&&(toastr.options.extendedTimeOut=g?0:c.val()),p.val().length&&(toastr.options.showEasing=p.val()),u.val().length&&(toastr.options.hideEasing=u.val()),d.val().length&&(toastr.options.showMethod=d.val()),h.val().length&&(toastr.options.hideMethod=h.val()),g&&(a=function(t){return t=t||"Clear itself?",t+='<br /><br /><button type="button" class="btn btn-outline-light btn-sm m-btn m-btn--air m-btn--wide clear">Yes</button>'}(a),toastr.options.tapToDismiss=!1),a||(a=function(){var t=["New order has been placed!","Are you the six fingered man?","Inconceivable!","I do not think that means what you think it means.","Have fun storming the castle!"];return++o===t.length&&(o=0),t[o]}()),$("#toastrOptions").text("toastr.options = "+JSON.stringify(toastr.options,null,2)+";\n\ntoastr."+n+'("'+a+(i?'", "'+i:"")+'");');var f=toastr[n](a,i);t=f,void 0!==f&&(f.find("#okBtn").length&&f.delegate("#okBtn","click",function(){alert("you clicked me. i was toast #"+v+". goodbye!"),f.remove()}),f.find("#surpriseBtn").length&&f.delegate("#surpriseBtn","click",function(){alert("Surprise! you clicked me. i was toast #"+v+". You could perform an action here.")}),f.find(".clear").length&&f.delegate(".clear","click",function(){toastr.clear(f,{force:!0})}))}),$("#clearlasttoast").click(function(){toastr.clear(t)}),$("#cleartoasts").click(function(){toastr.clear()})}()}};jQuery(document).ready(function(){ToastrDemo.init()});
+//== Class definition
+var ToastrDemo = function() {
+
+    //== Private functions
+
+    // basic demo
+    var demo = function() {
+        var i = -1;
+        var toastCount = 0;
+        var $toastlast;
+
+        var getMessage = function () {
+            var msgs = [
+                'New order has been placed!',
+                'Are you the six fingered man?',
+                'Inconceivable!',
+                'I do not think that means what you think it means.',
+                'Have fun storming the castle!'
+            ];
+            i++;
+            if (i === msgs.length) {
+                i = 0;
+            }
+
+            return msgs[i];
+        };
+
+        var getMessageWithClearButton = function (msg) {
+            msg = msg ? msg : 'Clear itself?';
+            msg += '<br /><br /><button type="button" class="btn btn-outline-light btn-sm m-btn m-btn--air m-btn--wide clear">Yes</button>';
+            return msg;
+        };
+
+        $('#showtoast').click(function () {
+            var shortCutFunction = $("#toastTypeGroup input:radio:checked").val();
+            var msg = $('#message').val();
+            var title = $('#title').val() || '';
+            var $showDuration = $('#showDuration');
+            var $hideDuration = $('#hideDuration');
+            var $timeOut = $('#timeOut');
+            var $extendedTimeOut = $('#extendedTimeOut');
+            var $showEasing = $('#showEasing');
+            var $hideEasing = $('#hideEasing');
+            var $showMethod = $('#showMethod');
+            var $hideMethod = $('#hideMethod');
+            var toastIndex = toastCount++;
+            var addClear = $('#addClear').prop('checked');
+
+            toastr.options = {
+                closeButton: $('#closeButton').prop('checked'),
+                debug: $('#debugInfo').prop('checked'),
+                newestOnTop: $('#newestOnTop').prop('checked'),
+                progressBar: $('#progressBar').prop('checked'),
+                positionClass: $('#positionGroup input:radio:checked').val() || 'toast-top-right',
+                preventDuplicates: $('#preventDuplicates').prop('checked'),
+                onclick: null
+            };
+
+            if ($('#addBehaviorOnToastClick').prop('checked')) {
+                toastr.options.onclick = function () {
+                    alert('You can perform some custom action after a toast goes away');
+                };
+            }
+
+            if ($showDuration.val().length) {
+                toastr.options.showDuration = $showDuration.val();
+            }
+
+            if ($hideDuration.val().length) {
+                toastr.options.hideDuration = $hideDuration.val();
+            }
+
+            if ($timeOut.val().length) {
+                toastr.options.timeOut = addClear ? 0 : $timeOut.val();
+            }
+
+            if ($extendedTimeOut.val().length) {
+                toastr.options.extendedTimeOut = addClear ? 0 : $extendedTimeOut.val();
+            }
+
+            if ($showEasing.val().length) {
+                toastr.options.showEasing = $showEasing.val();
+            }
+
+            if ($hideEasing.val().length) {
+                toastr.options.hideEasing = $hideEasing.val();
+            }
+
+            if ($showMethod.val().length) {
+                toastr.options.showMethod = $showMethod.val();
+            }
+
+            if ($hideMethod.val().length) {
+                toastr.options.hideMethod = $hideMethod.val();
+            }
+
+            if (addClear) {
+                msg = getMessageWithClearButton(msg);
+                toastr.options.tapToDismiss = false;
+            }
+            if (!msg) {
+                msg = getMessage();
+            }
+
+            $('#toastrOptions').text(
+                    'toastr.options = '
+                    + JSON.stringify(toastr.options, null, 2)
+                    + ';'
+                    + '\n\ntoastr.'
+                    + shortCutFunction
+                    + '("'
+                    + msg
+                    + (title ? '", "' + title : '')
+                    + '");'
+            );
+
+            var $toast = toastr[shortCutFunction](msg, title); // Wire up an event handler to a button in the toast, if it exists
+            $toastlast = $toast;
+
+            if(typeof $toast === 'undefined'){
+                return;
+            }
+
+            if ($toast.find('#okBtn').length) {
+                $toast.delegate('#okBtn', 'click', function () {
+                    alert('you clicked me. i was toast #' + toastIndex + '. goodbye!');
+                    $toast.remove();
+                });
+            }
+            if ($toast.find('#surpriseBtn').length) {
+                $toast.delegate('#surpriseBtn', 'click', function () {
+                    alert('Surprise! you clicked me. i was toast #' + toastIndex + '. You could perform an action here.');
+                });
+            }
+            if ($toast.find('.clear').length) {
+                $toast.delegate('.clear', 'click', function () {
+                    toastr.clear($toast, { force: true });
+                });
+            }
+        });
+
+        function getLastToast(){
+            return $toastlast;
+        }
+        $('#clearlasttoast').click(function () {
+            toastr.clear(getLastToast());
+        });
+        $('#cleartoasts').click(function () {
+            toastr.clear();
+        });
+    }
+
+    return {
+        // public functions
+        init: function() {
+            demo();
+        }
+    };
+}();
+
+jQuery(document).ready(function() {
+    ToastrDemo.init();
+});
