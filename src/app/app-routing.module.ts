@@ -3,9 +3,21 @@ import { Routes, RouterModule } from '@angular/router';
 import { LogoutComponent } from "./auth/logout/logout.component";
 
 const routes: Routes = [
-    { path: 'login', loadChildren: './auth/auth.module#AuthModule' },
-    { path: 'logout', component: LogoutComponent },
-    { path: '', redirectTo: 'index', pathMatch: 'full' },
+    {                
+        "path": "",
+        "redirectTo": "home",
+        "pathMatch": "full"
+    },
+    {
+        "path": "home",
+        "loadChildren": ".\/pages\/home\/home.module#HomeModule"
+    },
+
+    //{ path: '', component: HomeComponent },
+    //  { path: '',  loadChildren: './theme/pages/home/home.module#HomeModule' },
+    //  { path: 'login', loadChildren: './auth/auth.module#AuthModule' },
+    //  { path: 'logout', component: LogoutComponent },
+       { path: '', redirectTo: 'index', pathMatch: 'full' },
 ];
 
 @NgModule({

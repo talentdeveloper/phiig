@@ -1,1 +1,110 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./assets/app/css/bootstrap.css";
+
+.banner-outer{
+    background: url(./assets/app/media/img/logos/banner-1.jpg);
+    height: 648px;
+}
+
+.nav-header{
+    background-color: #dae2e4;
+    padding: 10px;
+}
+
+.nav-header a.nav-link{
+    color: #353233;
+    position: relative;
+    margin-top: -5px;
+}
+
+.nav-header a.nav-link i{
+    position: absolute;
+    top: 40%;
+}
+
+.nav-items{
+    line-height: 70px;
+    font-size: 1.2em;
+}
+
+.banner-text{
+    color: #fff;
+    background-color: rgba(75, 133, 170, 0.38);
+    margin-top: 300px;
+    font-size: 2em;
+}
+
+.body-content{
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+#became-member{
+    padding-top: 77px;
+}
+
+#became-member h1{
+    background-color: rgba(255, 255, 255, 0.38);
+    font-size: 2em;
+}
+
+#your-story{
+    color: #fff;
+    background-color: #00458c;
+    padding: 50px 50px 25px 50px;
+}
+
+
+
+#became-member{
+    background: url(./assets/app/media/img/logos/banner-2.jpg);
+    height: 282px;
+}
+
+footer{
+    background-color: #e2e2e1;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+footer ul{
+    padding: 0;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none !important;
+    color: #3d3d3d;
+}
+
+.social .icon{
+    float: left;
+    margin: 10px;
+}
+
+.icon{
+    background: url(./assets/app/media/img/logos/social-icons.png);
+    height: 55px;
+    width: 56px;
+    display: block;
+    overflow: hidden;
+}
+
+.icon.fb{
+    background-position: 0 0;
+}
+
+.icon.ig{
+    background-position: -75px 0;
+}
+
+.icon.gplus{
+    background-position: -151px 0;
+}
+
+.icon.twit{
+    background-position: -225px 0;
+}
