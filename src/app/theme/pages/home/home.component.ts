@@ -1,6 +1,8 @@
 import { Component, OnInit, ViewEncapsulation, AfterViewInit } from '@angular/core';
 import { ScriptLoaderService } from '../../../_services/script-loader.service';
 import { Helpers } from '../../../helpers';
+import { Router } from '@angular/router';
+import { LoginCustom } from '../../../auth/_helpers/login-custom';
 
 
 
@@ -12,9 +14,15 @@ import { Helpers } from '../../../helpers';
 export class HomeComponent implements OnInit, AfterViewInit {
 
 
-    constructor(private _script: ScriptLoaderService) {
+    constructor(private _script: ScriptLoaderService, private _router: Router) {
 
     }
+
+
+    signUp(){
+        this._router.navigate(["/signup"]);
+    }
+
     ngOnInit() {
 
     }

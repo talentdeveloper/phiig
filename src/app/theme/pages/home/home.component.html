@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>era-x</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  </head>
-  <body>
     <div class="container">
       <section class="banner-outer">
         <nav>
@@ -17,15 +7,16 @@
               <div class="col-md-9">
                 <div class="row nav-items float-md-right">
                   <!--.col-md-9-->
-                  <ul class="nav pull-right">
-                    <li class="nav-item"><a href="#" class="nav-link">Services<i class="material-icons">keyboard_arrow_down</i></a></li>
+                  <!-- <i class="material-icons">keyboard_arrow_down</i> -->
+                  <ul class="nav pull-right"> 
+                    <li class="nav-item"><a href="#" class="nav-link">Services&nbsp;<i class="fa fa-angle-down"></i></a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Why Commercial RE?</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Why Era-X</a></li>
                   </ul>
                   <!--.col-md-3-->
                   <div id="header-button">
-                    <button type="button" class="btn btn-outline-secondary">Join us</button>
-                    <button type="button" class="btn btn-danger">Log in</button>
+                    <button type="button" class="btn btn-outline-secondary" (click)="signUp()">Join us</button>
+                    <button type="button" class="btn btn-danger" routerLink="/login">Log in</button>
                   </div>
                 </div>
               </div>
@@ -61,17 +52,17 @@
       <section id="became-member">
         <div class="col-md-6 text-md-center offset-md-3">
           <h1 style="padding: 5px; margin-bottom: 32px;">Become a member today</h1>
-          <button type="button" class="btn btn-danger">Register Now</button>
+          <button type="button" class="btn btn-danger" (click)="signUp()">Register Now</button>
         </div>
       </section>
       <section id="your-story" class="text-md-center">
         <h1 class="story-header text-uppercase">it's your story to tell</h1>
         <p class="story-details">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled </p>
-        <p>"Name Here"</p><img src="./assets/app/media/img/logos//round-btn.png" alt="content">
+        <p>"Name Here"</p><img src="./assets/app/media/img/logos/round-btn.png" alt="content">
       </section>
       <footer>
         <div style="margin-bottom: 40px;" class="row">
-          <div class="col-md-3 offset-md-1"><img src="./assets/app/media/img/logos//logo.png" width="186px" height="86px"></div>
+          <div class="col-md-3 offset-md-1"><img src="./assets/app/media/img/logos/logo.png" width="186px" height="86px"></div>
           <div class="col-md-2">
             <h3 class="text-uppercase">site map</h3>
             <ul>
@@ -90,12 +81,12 @@
           </div>
           <div class="col-md-3">
             <h3 class="text-uppercase">contact us</h3>
-            <p>
-              70 Bowman St.
-              South Windsor, CT 06074
-              +1-202-536-9990
+            <address>
+              70 Bowman St.<br/>
+              South Windsor, CT 06074<br/>
+              +1-202-536-9990<br/>
               info@yahoo.com
-            </p>
+            </address>
           </div>
         </div>
         <section class="social row">
@@ -111,5 +102,3 @@
       </footer>
       <section class="copy-right text-center">copyright &copy; 2017</section>
     </div>
-  </body>
-</html>

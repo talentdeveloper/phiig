@@ -8,7 +8,7 @@ const routes: Routes = [
     {
         "path": "",
         "component": ThemeComponent,
-        // "canActivate": [AuthGuard],
+        "canActivate": [AuthGuard],
         "children": [          
             {
                 "path": "",
@@ -16,11 +16,6 @@ const routes: Routes = [
                 "pathMatch": "full"
             }
         ]
-    },
-
-    {
-        "path": "about",
-        "loadChildren": ".\/pages\/home\/home.module#HomeModule"
     },
     
     {

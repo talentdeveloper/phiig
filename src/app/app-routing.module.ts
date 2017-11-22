@@ -12,9 +12,14 @@ const routes: Routes = [
         "path": "home",
         "loadChildren": ".\/theme\/pages\/home\/home.module#HomeModule"
     },
-    //  { path: 'login', loadChildren: './auth/auth.module#AuthModule' },
-    //  { path: 'logout', component: LogoutComponent },
-       { path: '', redirectTo: 'index', pathMatch: 'full' },
+    {   "path": 'login', 
+        "loadChildren": './auth/auth.module#AuthModule' ,
+    },
+    {   "path": 'signup', 
+        "loadChildren": './auth/auth.module#AuthModule' ,
+    },
+    { path: 'logout', component: LogoutComponent },
+    { path: '', redirectTo: 'index', pathMatch: 'full' },
 ];
 
 @NgModule({
