@@ -10,11 +10,8 @@ const routes: Routes = [
     },
     {
         "path": "home",
-        "loadChildren": ".\/pages\/home\/home.module#HomeModule"
+        "loadChildren": ".\/theme\/pages\/home\/home.module#HomeModule"
     },
-
-    //{ path: '', component: HomeComponent },
-    //  { path: '',  loadChildren: './theme/pages/home/home.module#HomeModule' },
     //  { path: 'login', loadChildren: './auth/auth.module#AuthModule' },
     //  { path: 'logout', component: LogoutComponent },
        { path: '', redirectTo: 'index', pathMatch: 'full' },
