@@ -88,6 +88,12 @@ export class LoginCustom {
                         required: true,
                         email: true
                     },
+                    country: {
+                        required: true,
+                    },
+                    cellnumber: {
+                        required: true,
+                    },
                     password: {
                         required: true
                     },
