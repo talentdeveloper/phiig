@@ -23462,7 +23462,8 @@ body.m-content--skin-light2 {
 
 @media (min-width: 993px) {
   .m-header--fixed .m-body {
-    padding-top: 70px !important; } }
+    /* padding-top: 70px !important; */
+    padding-top: 0px !important; } }
 
 @media (max-width: 992px) {
   .m-header--fixed-mobile .m-body {
@@ -23471,7 +23472,8 @@ body.m-content--skin-light2 {
     -ms-transition: padding-top;
     -o-transition: padding-top;
     transition: padding-top;
-    padding-top: 60px; }
+    /* padding-top: 60px; */
+    padding-top: 0px; }
   .m-body .m-content {
     padding: 20px 20px; }
     .m-aside-right--enabled .m-body .m-content {

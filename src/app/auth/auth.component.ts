@@ -38,11 +38,11 @@ export class AuthComponent implements OnInit {
         debugger
         this.model.remember = true;
         // get return url from route parameters or default to '/'
-         //this.returnUrl = this._route.snapshot.queryParams['returnUrl'] || '/';
+         this.returnUrl = this._route.snapshot.queryParams['returnUrl'] || '/';
         // this._router.navigate([this.returnUrl]);
         
 
-        this._script.load('body', 'assets/vendors/base/vendors.bundle.js', 'assets/demo/default/base/scripts.bundle.js')
+        this._script.load('body', 'assets/vendors/base/vendors.bundle.js', 'assets/app/js/scripts.bundle.js')
             .then(() => {
                 Helpers.setLoading(false);
                 LoginCustom.init();
@@ -52,6 +52,13 @@ export class AuthComponent implements OnInit {
                 LoginCustom.displaySignUpForm();
             }
 
+    }
+
+    goHome(e){
+        $('#m_login_signup_cancel').click(function(e) {
+            e.preventDefault();
+        });
+        this._router.navigate(["/index"]); 
     }
 
     signin() {

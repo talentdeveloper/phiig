@@ -1,4 +1,3 @@
-import { HomeModule } from './theme/pages/home/home.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { ThemeComponent } from './theme/theme.component';

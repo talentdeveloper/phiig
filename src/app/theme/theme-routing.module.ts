@@ -2,14 +2,21 @@ import { NgModule } from '@angular/core';
 import { ThemeComponent } from './theme.component';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthGuard } from "../auth/_guards/auth.guard";
-import { HomeComponent } from './pages/home/home.component';
 
 const routes: Routes = [
     {
         "path": "",
         "component": ThemeComponent,
-        "canActivate": [AuthGuard],
-        "children": [          
+        // "canActivate": [AuthGuard],
+        "children": [
+            {
+                "path": "index",
+                "loadChildren": ".\/pages\/default\/index\/index.module#IndexModule"
+            },
+            {
+                "path": "404",
+                "loadChildren": ".\/pages\/default\/not-found\/not-found\/not-found.module#NotFoundModule"
+            },
             {
                 "path": "",
                 "redirectTo": "index",
@@ -17,7 +24,14 @@ const routes: Routes = [
             }
         ]
     },
-    
+    {   
+        "path": 'login', 
+        "loadChildren": './../auth/auth.module#AuthModule' ,
+    },
+    {  
+        "path": 'signup', 
+        "loadChildren": './../auth/auth.module#AuthModule' ,
+    },
     {
         "path": "**",
         "redirectTo": "404",
