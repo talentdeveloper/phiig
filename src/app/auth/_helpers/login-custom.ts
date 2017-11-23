@@ -69,10 +69,10 @@ export class LoginCustom {
             LoginCustom.displaySignUpForm();
         });
 
-        // $('#m_login_signup_cancel').click(function(e) {
-        //     e.preventDefault();
-        //     LoginCustom.displaySignInForm();
-        // });
+        $('#m_login_signup_cancel').click(function(e) {
+            e.preventDefault();
+            LoginCustom.displaySignInForm();
+        });
     }
 
     static handleSignUpFormSubmit() {
