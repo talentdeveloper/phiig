@@ -9,9 +9,10 @@
                   <!--.col-md-9-->
                   <!-- <i class="material-icons">keyboard_arrow_down</i> -->
                   <ul class="nav pull-right"> 
-                    <li class="nav-item"><a href="#" class="nav-link">Services&nbsp;<i class="fa fa-angle-down"></i></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Why Commercial RE?</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Why Era-X</a></li>
+                    <!-- <li class="nav-item"><a href="#" class="nav-link">Services&nbsp;<i class="fa fa-angle-down"></i></a></li> -->
+                    <li class="nav-item"><a href="#" class="nav-link">Why Commercial Real Estate?</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Why Era-X?</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
                   </ul>
                   <!--.col-md-3-->
                   <div id="header-button">
@@ -27,8 +28,8 @@
           <div class="col-md-6 text-md-center offset-md-3">
             <p class="banner-text">First Investment Platform Built On BLOCKCHAIN TECHNOLOGY</p>
             <div id="banner-button">
-              <button type="button" style="color: #bd161c; font-weight: bold;" class="btn btn-light">Join us</button>
-              <button type="button" class="btn btn-danger">Log in</button>
+              <button type="button" style="color: #bd161c; font-weight: bold;" class="btn btn-light" (click)="signUp()">Join us</button>
+              <button type="button" class="btn btn-danger" routerLink="/login">Log in</button>
             </div>
           </div>
         </div>
@@ -36,22 +37,27 @@
       <section class="body-content row">
         <div class="col-md-6"><img src="./assets/app/media/img/logos/content-1.jpg" alt="content" class="img-responsive"></div>
         <div class="col-md-6">
-          <h4 class="text-uppercase">achieve a better life trough commercial real estate investment</h4>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer </p>
+          <h4 class="text-uppercase">Why Commercial Real Estate (CRE) Investment?</h4>&nbsp;&nbsp;
+          <p> - CRE Market is Almost Save Size As Stock Market </p>
+          <p> - CRE is Not Volative </p>
+          <p> - CRE Market Has No Headache and Trouble With Family and Individual Tenants in Residental Properties </p>
+          <p> - CRE Provides Steady Passive Income (Partialy Tax Free) </p>&nbsp;
           <button type="button" class="btn btn-danger">Read more</button>
         </div>
       </section>
       <section class="body-content row">
         <div class="col-md-6">
-          <h4 class="text-uppercase">why commercial RE?</h4>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+          <h4 class="text-uppercase">Why Era-X?</h4>&nbsp;&nbsp;
+          <p> - Proven Investment Method </p>
+          <p> - Era-X Provides Platform For Investment and Droptunities that are More Liquid Yet Robust Performance </p>
+          <p> - Blockchain Technology Yields Better Protection to Your Investment Transactions and Future Liquidity in Currency Formats </p>&nbsp;
           <button type="button" class="btn btn-danger">Read more</button>
         </div>
         <div class="col-md-6"><img src="./assets/app/media/img/logos/content-2.jpg" alt="content" class="img-responsive"></div>
       </section>
       <section id="became-member">
         <div class="col-md-6 text-md-center offset-md-3">
-          <h1 style="padding: 5px; margin-bottom: 32px;">Become a member today</h1>
+          <h1 style="padding: 5px; margin-bottom: 32px;">Become a Member Today</h1>
           <button type="button" class="btn btn-danger" (click)="signUp()">Register Now</button>
         </div>
       </section>
@@ -66,9 +72,9 @@
           <div class="col-md-2">
             <h3 class="text-uppercase">site map</h3>
             <ul>
-              <li> <a href="#">Services</a></li>
-              <li> <a href="#">Why commercial RE?</a></li>
-              <li> <a href="#">Why Era-x</a></li>
+              <li> <a href="#">Why CRE Investment?</a></li>
+              <li> <a href="#">Why Era-X?</a></li>
+              <li> <a href="#">FAQ</a></li>
             </ul>
           </div>
           <div class="col-md-2">
@@ -100,5 +106,5 @@
           </div>
         </section>
       </footer>
-      <section class="copy-right text-center">copyright &copy; 2017</section>
+      <section class="copy-right text-center">copyright &copy; 2017 PHIIG Investment Group</section>
     </div>
