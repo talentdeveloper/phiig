@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation, AfterViewInit } from '@angular/core';
 import { Helpers } from '../../../helpers';
+import { Router } from '@angular/router';
 
 declare let mLayout: any;
 @Component({
@@ -10,14 +11,18 @@ declare let mLayout: any;
 export class HeaderNavComponent implements OnInit, AfterViewInit {
 
 
-    constructor() {
+    constructor( private _router: Router) {
 
     }
+
+    signUp(){
+        this._router.navigate(["/signup"]);
+    }
+
     ngOnInit() {
 
     }
     ngAfterViewInit() {
-
         mLayout.initHeader();
 
     }

@@ -35,7 +35,6 @@ export class AuthComponent implements OnInit {
     }
 
     ngOnInit() {
-        debugger
         this.model.remember = true;
         // get return url from route parameters or default to '/'
          this.returnUrl = this._route.snapshot.queryParams['returnUrl'] || '/';

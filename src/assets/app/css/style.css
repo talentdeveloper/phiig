@@ -1,11 +1,17 @@
 .banner-outer{
-    background: url(./assets/app/media/img/logos/banner-1.jpg);
-    height: 648px;
+    position: relative;
+}
+
+#banner-button{
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
 }
 
 .nav-header{
     background-color: #dae2e4;
     padding: 10px;
+    box-shadow: 0px 3px 1px #505050;
 }
 
 .nav-header a.nav-link{
@@ -16,7 +22,7 @@
 
 .nav-header a.nav-link i{
     position: absolute;
-    top: 40%;
+    top: 38%;
 }
 
 .nav-items{
@@ -36,14 +42,25 @@
     margin-bottom: 70px;
 }
 
-#became-member{
-    padding-top: 77px;
+.separator{
+    height: 3px;
+    background-color: #c9caca;
+    width: 100%;
 }
 
-#became-member h1{
-    background-color: rgba(255, 255, 255, 0.38);
-    font-size: 2em;
+#became-member{
+    margin-top: 52px;
+    /* padding-top: 77px; */
+    position: relative;
 }
+
+#register-btn{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-left: -57px;
+}
+
 
 #your-story{
     color: #fff;
@@ -51,12 +68,22 @@
     padding: 50px 50px 25px 50px;
 }
 
-
-
-#became-member{
-    background: url(./assets/app/media/img/logos/banner-2.jpg);
-    height: 282px;
+.paging-btn button{
+    width: 15px;
+    height: 15px;
+    background: url(./assets/app/media/img/logos/round-btn.png);
+    border: none;
+    background-position: -20px 0px;
 }
+
+.paging-btn button.active, .paging-btn button:hover{
+    width: 15px;
+    height: 15px;
+    background: url(./assets/app/media/img/logos/round-btn.png);
+    border: none;
+    background-position: 0px 0px;
+}
+
 
 footer{
     background-color: #e2e2e1;
@@ -106,14 +133,22 @@ footer ul li a{
     background-position: -225px 0;
 }
 
-.offset-md-3 {
-    margin-left: 25% !important; 
+.copy-right{
+    height: 53px;
+    line-height: 53px;
 }
 
-.btn-outline-secondary {
-    color: #868e96;
-    background-color: transparent;
-    background-image: none;
-    border-color: #868e96 !important;
+@media only screen and (max-width: 640px) {
+    #banner-button{
+        text-align: center;
+        position: unset;
+    }
+
+    #register-btn{
+        padding: 0.35rem 0.75rem;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        border-radius: 0.2rem;
+    }
 }
 

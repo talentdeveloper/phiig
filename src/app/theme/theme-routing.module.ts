@@ -13,6 +13,16 @@ const routes: Routes = [
                 "path": "index",
                 "loadChildren": ".\/pages\/default\/index\/index.module#IndexModule"
             },
+            {  
+                "path": 'member', 
+                "loadChildren": './../theme/pages/default/member/member.module#MemberModule' ,
+            },
+            {  
+                "path": 'member-fee', 
+                "loadChildren": './../theme/pages/default/member-fee/member.fee.module#MemberFeeModule' ,
+            },
+            
+
             {
                 "path": "404",
                 "loadChildren": ".\/pages\/default\/not-found\/not-found\/not-found.module#NotFoundModule"
@@ -32,6 +42,7 @@ const routes: Routes = [
         "path": 'signup', 
         "loadChildren": './../auth/auth.module#AuthModule' ,
     },
+    
     {
         "path": "**",
         "redirectTo": "404",

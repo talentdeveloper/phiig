@@ -17091,7 +17091,8 @@ code {
 
 .m-form__group.row .m-checkbox-inline,
 .m-form__group.row .m-radio-inline {
-  margin-top: 5px; }
+  /* margin-top: 5px; */
+  margin-top: 9px; }
 
 .m-form__group.row .m-checkbox-list,
 .m-form__group.row .m-radio-list {
@@ -20563,8 +20564,9 @@ code {
   padding-bottom: 0; }
 
 .m-form.m-form--group-seperator-dashed .m-form__group, .m-form.m-form--group-seperator .m-form__group {
-  padding-top: 25px;
-  padding-bottom: 25px; }
+  /* padding-top: 25px; */
+  padding-top: 15px;
+  padding-bottom: 15px; }
 
 .m-form .form-control-feedback {
   margin-top: 0.2rem; }
