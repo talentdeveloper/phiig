@@ -21,8 +21,10 @@ const routes: Routes = [
                 "path": 'member-fee', 
                 "loadChildren": './../theme/pages/default/member-fee/member.fee.module#MemberFeeModule' ,
             },
-            
-
+            {  
+                "path": 'property', 
+                "loadChildren": './../theme/pages/default/property/property.module#PropertyModule' ,
+            },
             {
                 "path": "404",
                 "loadChildren": ".\/pages\/default\/not-found\/not-found\/not-found.module#NotFoundModule"

@@ -1,0 +1,17 @@
+.icon{
+    background: url(./assets/app/media/img/logos/icon.png);
+    height: 21px;
+    width: 21px;
+    display: block;
+    overflow: hidden;
+    float: left;
+    margin-right: 5px;
+}
+
+.icon-list{
+    background-position: 0 0;
+}
+
+.icon-grid{
+    background-position: -31px 0;
+}

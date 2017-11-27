@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-
 .banner-outer{
     position: relative;
+}
+.gray-bg{
+    background-color: #e6e7e8;
 }
 
 #banner-button{
@@ -63,6 +65,7 @@
     margin-left: -57px;
 }
 
+
 #your-story{
     color: #fff;
     background-color: #00458c;
@@ -85,9 +88,6 @@
     background-position: 0px 0px;
 }
 
-.footer-logo{
-    margin-left: 139px;
-}
 
 footer{
     background-color: #e2e2e1;
@@ -142,6 +142,7 @@ footer ul li a{
     line-height: 53px;
 }
 
+
 @media only screen and (max-width: 640px) {
     #banner-button{
         text-align: center;
@@ -154,7 +155,46 @@ footer ul li a{
         line-height: 1.5;
         border-radius: 0.2rem;
     }
-    .footer-logo{
-        margin-left: 0px;
-    }
 }
+
+.property {
+    margin-top: 48px;
+    margin-bottom: 10px;
+}
+.list-controller{
+    margin-top: 60px;
+}
+.list-items{
+    margin-top: 48px;
+    margin-bottom: 48px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.item-details label{
+    font-size: 1.35em;
+}
+.more-btn{
+    padding-bottom: 48px;
+    margin: auto;
+}
+
+.icon-view{
+    background: url(./assets/app/media/img/logos/icon.png);
+    height: 21px;
+    width: 21px;
+    display: block;
+    overflow: hidden;
+    float: left;
+    margin-right: 5px;
+}
+
+.icon-list{
+    background-position: 0 0;
+}
+
+.icon-grid{
+    background-position: -31px 0;
+}
+
+
+
