@@ -25,6 +25,10 @@ const routes: Routes = [
                 "path": 'property', 
                 "loadChildren": './../theme/pages/default/property/property.module#PropertyModule' ,
             },
+            {  
+                "path": 'fund', 
+                "loadChildren": './../theme/pages/default/funds/fund.module#FundModule' ,
+            },
             {
                 "path": "404",
                 "loadChildren": ".\/pages\/default\/not-found\/not-found\/not-found.module#NotFoundModule"
