@@ -1,10 +1,9 @@
-import { PropertyDetailComponent } from './property.detail.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { DefaultComponent } from '../default.component';
 import { LayoutModule } from '../../../layouts/layout.module';
-import { PropertyComponent } from './property.component';
+import { FaqComponent } from './faq.component';
 
 const routes: Routes = [
     {
@@ -13,11 +12,7 @@ const routes: Routes = [
 		children: [
 			{
 				path: "",
-				component: PropertyComponent,
-            },
-            {
-				path: ":oid",
-				component: PropertyDetailComponent,
+				component: FaqComponent,
             }
 		]
 	},
@@ -28,12 +23,11 @@ const routes: Routes = [
     ], exports: [
         RouterModule
     ], declarations: [
-        PropertyComponent,
-        PropertyDetailComponent
+        FaqComponent,
         
     ]
 })
-export class PropertyModule {
+export class FaqModule {
 
 
 

@@ -6,19 +6,15 @@ import { Helpers } from '../../../../helpers';
 
 @Component({
     selector: ".m-grid__item.m-grid__item--fluid.m-wrapper",
-    templateUrl: "./property.component.html",
+    templateUrl: "./property.detail.component.html",
     encapsulation: ViewEncapsulation.None,
 })
-export class PropertyComponent implements OnInit, AfterViewInit {
+export class PropertyDetailComponent implements OnInit, AfterViewInit {
 
 
     constructor(private _script: ScriptLoaderService, private _router: Router) {
 
     }
-    ShowDetail(){
-        this._router.navigate(['/property', '777']);
-    }
-
     ngOnInit() {
         this._script.load('body', 'assets/vendors/base/vendors.bundle.js', 'assets/app/js/scripts.bundle.js')
         .then(() => {
@@ -26,8 +22,7 @@ export class PropertyComponent implements OnInit, AfterViewInit {
         });
     }
     ngAfterViewInit() {
-        this._script.load('.m-grid__item.m-grid__item--fluid.m-wrapper',
-        'assets/demo/default/custom/components/forms/widgets/select2.js');
+        this._script.load('.m-grid__item.m-grid__item--fluid.m-wrapper');
     }
 
 }

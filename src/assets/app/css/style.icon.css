@@ -1,5 +1,14 @@
 .icon{
-    background: url(./assets/app/media/img/logos/icon.png);
+    background: url(../media/img/logos/icon.png);
+    height: 21px;
+    width: 21px;
+    display: block;
+    overflow: hidden;
+    float: left;
+    margin-right: 5px;
+}
+.icon-view{
+    background: url(../media/img/logos/icon.png);
     height: 21px;
     width: 21px;
     display: block;
@@ -14,4 +23,25 @@
 
 .icon-grid{
     background-position: -31px 0;
+}
+.icon-arrow-down{
+    background-position: -62px 0;
+}
+.icon-arrow-up{
+    background-position: -91px 0;
+}
+
+.icon-large{
+    height: 60px;
+    width: 60px;
+}
+
+.icon-home{
+    background-position: 0px -22px;
+}
+.icon-donate{
+    background-position: -71px -22px;
+}
+.icon-chat{
+    background-position: -138px -22px;
 }

@@ -15,6 +15,10 @@ export class HeaderNavComponent implements OnInit, AfterViewInit {
 
     }
 
+    goToFaq(){
+        this._router.navigate(["/faq"]); 
+    }
+
     signUp(){
         this._router.navigate(["/signup"]);
     }

@@ -1,0 +1,296 @@
+.banner-outer{
+    position: relative;
+}
+
+.gray-bg{
+    background-color: #e6e7e8;
+}
+
+#banner-button{
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+}
+
+.nav-header{
+    background-color: #dae2e4;
+    padding: 10px;
+    box-shadow: 0px 3px 1px #505050;
+}
+
+.nav-header a.nav-link{
+    color: #353233;
+    position: relative;
+    margin-top: -5px;
+}
+
+.nav-header a.nav-link i{
+    position: absolute;
+    top: 38%;
+}
+
+.nav-items{
+    line-height: 70px;
+    font-size: 1.2em;
+}
+
+.banner-text{
+    color: #fff;
+    background-color: rgba(75, 133, 170, 0.38);
+    margin-top: 300px;
+    font-size: 2em;
+}
+
+.body-content{
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+.separator{
+    height: 3px;
+    background-color: #c9caca;
+    width: 100%;
+}
+
+#became-member{
+    margin-top: 52px;
+    /* padding-top: 77px; */
+    position: relative;
+}
+
+#register-btn{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-left: -57px;
+}
+
+
+#your-story{
+    color: #fff;
+    background-color: #00458c;
+    padding: 50px 50px 25px 50px;
+}
+
+.paging-btn button{
+    width: 15px;
+    height: 15px;
+    background: url(../media/img/logos/round-btn.png);
+    border: none;
+    background-position: -20px 0px;
+}
+
+.paging-btn button.active, .paging-btn button:hover{
+    width: 15px;
+    height: 15px;
+    background: url(../media/img/logos/round-btn.png);
+    border: none;
+    background-position: 0px 0px;
+}
+
+.footer-logo{
+    margin-left: 139px;
+}
+
+footer{
+    background-color: #e2e2e1;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+footer ul{
+    padding: 0;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none !important;
+    color: #3d3d3d;
+}
+
+.social .sicon{
+    float: left;
+    margin: 10px;
+}
+
+
+.sicon{
+    background: url(../media/img/logos/social-icons.png);
+    height: 55px;
+    width: 56px;
+    display: block;
+    overflow: hidden;
+}
+
+.sicon.fb{
+    background-position: 0 0;
+}
+
+.sicon.ig{
+    background-position: -75px 0;
+}
+
+.sicon.gplus{
+    background-position: -151px 0;
+}
+
+.sicon.twit{
+    background-position: -225px 0;
+}
+
+.copy-right{
+    height: 53px;
+    line-height: 53px;
+}
+
+@media only screen and (max-width: 640px) {
+    #banner-button{
+        text-align: center;
+        position: unset;
+    }
+
+    #register-btn{
+        padding: 0.35rem 0.75rem;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        border-radius: 0.2rem;
+    }
+    .footer-logo{
+        margin-left: 0px;
+    }
+}
+
+
+/* List page */
+.property {
+    margin-top: 48px;
+    margin-bottom: 10px;
+}
+.list-controller{
+    margin-top: 60px;
+}
+.list-items{
+    margin-top: 48px;
+    margin-bottom: 48px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.item-details label{
+    font-size: 1.35em;
+}
+.more-btn{
+    margin-bottom: 48px;
+}
+
+/*FAQ page*/
+.faq-bg{
+    background-image: url(../media/img/logos/faq-bg.jpg);
+    min-height: 592px;
+}
+
+.text-dark-gray{
+    color: #414241;
+}
+
+.text-gray{
+    color: #58595b;
+}
+
+.text-light-gray{
+    color: #808285;
+}
+
+.faq-inner-bg{
+    background-color: rgba(235, 235, 235, 0.9)
+}
+
+.faq-inner-bg h1, .faq-inner-bg h3{
+    line-height: 1.8em;
+}
+
+.faq-inner-bg i{
+    margin-top: 0.7em;
+}
+
+/* PF - 6*/
+
+.pf-container{
+    margin-top: 92px;
+    /* font-size: 1.2em; */
+}
+.pf-container h2{
+    margin-bottom: 45px;
+}
+
+.m-badge{
+    min-height: 10px;
+    min-width: 10px;
+    border-radius: 5px;
+    background-color: #000 !important;
+}
+
+.box-card{
+    padding-bottom: 70px;
+}
+
+.box-card div.card{
+    padding: 15px;
+}
+
+.card li:first-child{
+    border:none;
+}
+
+.small-card{
+  margin-top: 25px !important;
+}
+
+/* .small-card ul.list-group, .small-card h3, .small-card img{
+    margin-bottom: 10px;
+}
+.large-card ul.list-group, .large-card h3, .large-card img{
+    margin-bottom: 15px;
+} */
+
+.large-card ul.list-group li.list-group-item{
+    padding: 7px;
+}
+
+.list-group-item{
+    padding: 5px !important;
+    border: 1px solid rgba(0,0,0,1);
+    font-size: 0.9em;
+}
+
+.large-card .list-group-item{
+    font-size: 1em;
+}
+
+
+.card-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+  
+.card-1:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+  
+.card-2 {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+  
+.card-3 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+  
+.card-4 {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+  
+.card-5 {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}

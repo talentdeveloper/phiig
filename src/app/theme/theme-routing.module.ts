@@ -29,6 +29,14 @@ const routes: Routes = [
                 "path": 'fund', 
                 "loadChildren": './../theme/pages/default/funds/fund.module#FundModule' ,
             },
+            {  
+                "path": 'faq', 
+                "loadChildren": './../theme/pages/default/faq/faq.module#FaqModule' ,
+            },
+            {  
+                "path": 'became', 
+                "loadChildren": './../theme/pages/default/pf-6/pf-6.module#Pf6Module' ,
+            },
             {
                 "path": "404",
                 "loadChildren": ".\/pages\/default\/not-found\/not-found\/not-found.module#NotFoundModule"
@@ -40,6 +48,7 @@ const routes: Routes = [
             }
         ]
     },
+    
     {   
         "path": 'login', 
         "loadChildren": './../auth/auth.module#AuthModule' ,
