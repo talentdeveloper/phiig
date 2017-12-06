@@ -37,6 +37,18 @@ const routes: Routes = [
                 "path": 'became', 
                 "loadChildren": './../theme/pages/default/pf-6/pf-6.module#Pf6Module' ,
             },
+            {  
+                "path": 'pri-placement', 
+                "loadChildren": './../theme/pages/default/pf-12/pf-12.module#Pf12Module' ,
+            },
+            {  
+                "path": 'forum', 
+                "loadChildren": './../theme/pages/default/forum/forum.module#ForumModule' ,
+            },
+            {  
+                "path": 'property-owner', 
+                "loadChildren": './../theme/pages/default/property-owner/property-owner.module#PropertyOwnerModule' ,
+            },
             {
                 "path": "404",
                 "loadChildren": ".\/pages\/default\/not-found\/not-found\/not-found.module#NotFoundModule"
