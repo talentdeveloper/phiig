@@ -49,6 +49,14 @@ const routes: Routes = [
                 "path": 'property-owner', 
                 "loadChildren": './../theme/pages/default/property-owner/property-owner.module#PropertyOwnerModule' ,
             },
+            {  
+                "path": 'investor-report', 
+                "loadChildren": './../theme/pages/default/investor/investor.module#InvestorModule' ,
+            },
+            {  
+                "path": 'investor-move', 
+                "loadChildren": './../theme/pages/default/investor-move/investor-move.module#InvestorMoveModule' ,
+            },
             {
                 "path": "404",
                 "loadChildren": ".\/pages\/default\/not-found\/not-found\/not-found.module#NotFoundModule"
