@@ -57,6 +57,10 @@ const routes: Routes = [
                 "path": 'investor-move', 
                 "loadChildren": './../theme/pages/default/investor-move/investor-move.module#InvestorMoveModule' ,
             },
+            {  
+                "path": 'private-perticipation', 
+                "loadChildren": './../theme/pages/default/private-perticipation/private-perticipation.module#PrivatePerticipationModule' ,
+            },
             {
                 "path": "404",
                 "loadChildren": ".\/pages\/default\/not-found\/not-found\/not-found.module#NotFoundModule"
