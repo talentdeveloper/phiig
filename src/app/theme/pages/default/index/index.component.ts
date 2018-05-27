@@ -19,7 +19,7 @@ export class IndexComponent implements OnInit, AfterViewInit {
 
     }
 
-    signUp(){
+    signUp() {
         this._router.navigate(["/signup"]);
     }
     ngAfterViewInit() {

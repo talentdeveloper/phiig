@@ -11,15 +11,15 @@ declare let mLayout: any;
 export class HeaderNavComponent implements OnInit, AfterViewInit {
 
 
-    constructor( private _router: Router) {
+    constructor(private _router: Router) {
 
     }
 
-    goToFaq(){
-        this._router.navigate(["/faq"]); 
+    goToFaq() {
+        this._router.navigate(["/faq"]);
     }
 
-    signUp(){
+    signUp() {
         this._router.navigate(["/signup"]);
     }
 

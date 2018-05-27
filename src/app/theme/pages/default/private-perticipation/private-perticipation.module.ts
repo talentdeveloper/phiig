@@ -7,15 +7,15 @@ import { PrivatePerticipationComponent } from './private-perticipation.component
 
 const routes: Routes = [
     {
-		path: "",
-		component: DefaultComponent,
-		children: [
-			{
-				path: "",
-				component: PrivatePerticipationComponent,
+        path: "",
+        component: DefaultComponent,
+        children: [
+            {
+                path: "",
+                component: PrivatePerticipationComponent,
             }
-		]
-	},
+        ]
+    },
 ];
 @NgModule({
     imports: [
@@ -23,7 +23,7 @@ const routes: Routes = [
     ], exports: [
         RouterModule
     ], declarations: [
-        PrivatePerticipationComponent        
+        PrivatePerticipationComponent
     ]
 })
 export class PrivatePerticipationModule {

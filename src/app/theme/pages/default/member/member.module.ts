@@ -7,15 +7,15 @@ import { LayoutModule } from '../../../layouts/layout.module';
 
 const routes: Routes = [
     {
-		path: "",
-		component: DefaultComponent,
-		children: [
-			{
-				path: "",
-				component: MemberComponent,
+        path: "",
+        component: DefaultComponent,
+        children: [
+            {
+                path: "",
+                component: MemberComponent,
             }
-		]
-	},
+        ]
+    },
 ];
 @NgModule({
     imports: [
@@ -24,7 +24,7 @@ const routes: Routes = [
         RouterModule
     ], declarations: [
         MemberComponent,
-        
+
     ]
 })
 export class MemberModule {

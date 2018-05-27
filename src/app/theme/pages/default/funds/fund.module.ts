@@ -7,15 +7,15 @@ import { FundComponent } from './fund.component';
 
 const routes: Routes = [
     {
-		path: "",
-		component: DefaultComponent,
-		children: [
-			{
-				path: "",
-				component: FundComponent,
+        path: "",
+        component: DefaultComponent,
+        children: [
+            {
+                path: "",
+                component: FundComponent,
             }
-		]
-	},
+        ]
+    },
 ];
 @NgModule({
     imports: [
@@ -24,7 +24,7 @@ const routes: Routes = [
         RouterModule
     ], declarations: [
         FundComponent,
-        
+
     ]
 })
 export class FundModule {

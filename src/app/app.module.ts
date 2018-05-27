@@ -24,7 +24,7 @@ import { LocationStrategy, PathLocationStrategy, HashLocationStrategy } from '@a
         ThemeRoutingModule,
         AuthModule,
     ],
-    providers: [ScriptLoaderService, { provide: ErrorHandler, useClass: GlobalErrorHandler }, {provide: LocationStrategy, useClass: HashLocationStrategy}
+    providers: [ScriptLoaderService, { provide: ErrorHandler, useClass: GlobalErrorHandler }, { provide: LocationStrategy, useClass: HashLocationStrategy }
     ],
     bootstrap: [AppComponent]
 })

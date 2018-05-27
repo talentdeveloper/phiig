@@ -7,15 +7,15 @@ import { PropertyOwnerComponent } from './property-owner.component';
 
 const routes: Routes = [
     {
-		path: "",
-		component: DefaultComponent,
-		children: [
-			{
-				path: "",
-				component: PropertyOwnerComponent,
+        path: "",
+        component: DefaultComponent,
+        children: [
+            {
+                path: "",
+                component: PropertyOwnerComponent,
             }
-		]
-	},
+        ]
+    },
 ];
 @NgModule({
     imports: [
@@ -23,7 +23,7 @@ const routes: Routes = [
     ], exports: [
         RouterModule
     ], declarations: [
-        PropertyOwnerComponent        
+        PropertyOwnerComponent
     ]
 })
 export class PropertyOwnerModule {

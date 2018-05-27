@@ -7,15 +7,15 @@ import { ForumComponent } from './forum.component';
 
 const routes: Routes = [
     {
-		path: "",
-		component: DefaultComponent,
-		children: [
-			{
-				path: "",
-				component: ForumComponent,
+        path: "",
+        component: DefaultComponent,
+        children: [
+            {
+                path: "",
+                component: ForumComponent,
             }
-		]
-	},
+        ]
+    },
 ];
 @NgModule({
     imports: [
@@ -23,7 +23,7 @@ const routes: Routes = [
     ], exports: [
         RouterModule
     ], declarations: [
-        ForumComponent        
+        ForumComponent
     ]
 })
 export class ForumModule {

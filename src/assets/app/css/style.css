@@ -1,3 +1,7 @@
+.main-container {
+    overflow-x: hidden;
+}
+
 .banner-outer{
     position: relative;
 }
@@ -65,11 +69,14 @@
     margin-left: -57px;
 }
 
-
 #your-story{
     color: #fff;
     background-color: #00458c;
     padding: 50px 50px 25px 50px;
+}
+
+.paging-btn {
+    display: inline-block;
 }
 
 .paging-btn button{
@@ -302,6 +309,11 @@ footer ul li a{
     border-bottom: 3px solid #d1d2d2;
     line-height: 94px;
     margin-bottom: 50px;
+}
+
+.frame-header{
+    font-weight: bold;
+    line-height: 94px;
 }
 
 .icon-round{

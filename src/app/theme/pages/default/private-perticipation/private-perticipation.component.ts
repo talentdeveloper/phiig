@@ -18,13 +18,13 @@ export class PrivatePerticipationComponent implements OnInit, AfterViewInit {
 
     ngOnInit() {
         this._script.load('body', 'assets/vendors/base/vendors.bundle.js', 'assets/app/js/scripts.bundle.js')
-        .then(() => {
-            Helpers.setLoading(false);
-        });
+            .then(() => {
+                Helpers.setLoading(false);
+            });
     }
     ngAfterViewInit() {
         this._script.load('.m-grid__item.m-grid__item--fluid.m-wrapper',
-        'assets/demo/default/custom/components/forms/widgets/select2.js', 'assets/demo/default/custom/components/forms/widgets/bootstrap-datepicker.js');
+            'assets/demo/default/custom/components/forms/widgets/select2.js', 'assets/demo/default/custom/components/forms/widgets/bootstrap-datepicker.js');
     }
 
 }

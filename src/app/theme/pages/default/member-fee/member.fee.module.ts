@@ -7,15 +7,15 @@ import { MemberFeeComponent } from './member.fee.component';
 
 const routes: Routes = [
     {
-		path: "",
-		component: DefaultComponent,
-		children: [
-			{
-				path: "",
-				component: MemberFeeComponent,
+        path: "",
+        component: DefaultComponent,
+        children: [
+            {
+                path: "",
+                component: MemberFeeComponent,
             }
-		]
-	},
+        ]
+    },
 ];
 @NgModule({
     imports: [
@@ -24,7 +24,7 @@ const routes: Routes = [
         RouterModule
     ], declarations: [
         MemberFeeComponent,
-        
+
     ]
 })
 export class MemberFeeModule {

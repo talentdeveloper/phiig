@@ -8,19 +8,19 @@ import { PropertyComponent } from './property.component';
 
 const routes: Routes = [
     {
-		path: "",
-		component: DefaultComponent,
-		children: [
-			{
-				path: "",
-				component: PropertyComponent,
+        path: "",
+        component: DefaultComponent,
+        children: [
+            {
+                path: "",
+                component: PropertyComponent,
             },
             {
-				path: ":oid",
-				component: PropertyDetailComponent,
+                path: "detail",
+                component: PropertyDetailComponent,
             }
-		]
-	},
+        ]
+    },
 ];
 @NgModule({
     imports: [
@@ -30,7 +30,7 @@ const routes: Routes = [
     ], declarations: [
         PropertyComponent,
         PropertyDetailComponent
-        
+
     ]
 })
 export class PropertyModule {
