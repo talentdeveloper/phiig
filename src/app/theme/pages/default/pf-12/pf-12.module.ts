@@ -7,15 +7,15 @@ import { Pf12Component } from './pf-12.component';
 
 const routes: Routes = [
     {
-		path: "",
-		component: DefaultComponent,
-		children: [
-			{
-				path: "",
-				component: Pf12Component,
+        path: "",
+        component: DefaultComponent,
+        children: [
+            {
+                path: "",
+                component: Pf12Component,
             }
-		]
-	},
+        ]
+    },
 ];
 @NgModule({
     imports: [
@@ -23,7 +23,7 @@ const routes: Routes = [
     ], exports: [
         RouterModule
     ], declarations: [
-        Pf12Component        
+        Pf12Component
     ]
 })
 export class Pf12Module {

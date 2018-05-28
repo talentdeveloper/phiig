@@ -37,9 +37,9 @@ export class AuthComponent implements OnInit {
     ngOnInit() {
         this.model.remember = true;
         // get return url from route parameters or default to '/'
-         this.returnUrl = this._route.snapshot.queryParams['returnUrl'] || '/';
+        this.returnUrl = this._route.snapshot.queryParams['returnUrl'] || '/';
         // this._router.navigate([this.returnUrl]);
-        
+
 
         this._script.load('body', 'assets/vendors/base/vendors.bundle.js', 'assets/app/js/scripts.bundle.js')
             .then(() => {
@@ -47,17 +47,17 @@ export class AuthComponent implements OnInit {
                 LoginCustom.init();
             });
 
-            if(this._location.path().includes("signup")){
-                LoginCustom.displaySignUpForm();
-            }
+        if (this._location.path().includes("signup")) {
+            LoginCustom.displaySignUpForm();
+        }
 
     }
 
-    goHome(e){
+    goHome(e) {
         $('#m_login_signup_cancel').click(function(e) {
             e.preventDefault();
         });
-        this._router.navigate(["/index"]); 
+        this._router.navigate(["/index"]);
     }
 
     signin() {
